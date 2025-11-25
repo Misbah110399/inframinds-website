@@ -981,225 +981,207 @@
                 <p>Let's discuss how we can transform your technology infrastructure and business processes</p>
             </div>
 
-            <form id="consultationForm" class="consultation-form">
-                <!-- Progress Indicator -->
-                <div class="progress-indicator">
-                    <div class="step active" data-step="1">Personal Info</div>
-                    <div class="step" data-step="2">Project Details</div>
-                    <div class="step" data-step="3">Logistics</div>
-                    <div class="step" data-step="4">Review</div>
-                </div>
+            <form id="consultationForm" class="consultation-form" action="https://formspree.io/f/mqkvlbee" method="POST">
+    <!-- Progress Indicator -->
+    <div class="progress-indicator">
+        <div class="step active" data-step="1">Personal Info</div>
+        <div class="step" data-step="2">Project Details</div>
+        <div class="step" data-step="3">Logistics</div>
+        <div class="step" data-step="4">Review</div>
+    </div>
 
-                <!-- Step 1: Personal Information -->
-                <div class="form-step active" data-step="1">
-                    <h3>Personal Information</h3>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                            <span class="error-message"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                            <span class="error-message"></span>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="error-message"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                            <span class="error-message"></span>
-                        </div>
-                    </div>
+    <!-- Step 1: Personal Information -->
+    <div class="form-step active" data-step="1">
+        <h3>Personal Information</h3>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span class="error-message"></span>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error-message"></span>
+            </div>
+        </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="company">Company/Organization</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-group">
-                            <label for="jobTitle">Job Title/Role</label>
-                            <input type="text" id="jobTitle" name="jobTitle">
-                        </div>
-                    </div>
+        
 
-                    <button type="button" class="btn-next">Next →</button>
-                </div>
+        <button type="button" class="btn-next">Next →</button>
+    </div>
 
-                <!-- Step 2: Project Details -->
-                <div class="form-step" data-step="2">
-                    <h3>Project Details</h3>
-                    
-                    <div class="form-group">
-                        <label for="primaryInterest">Primary Interest *</label>
-                        <select id="primaryInterest" name="primaryInterest" required>
-                            <option value="">Select an option</option>
-                            <option value="cloud-solutions">Cloud Solutions</option>
-                            <option value="cybersecurity">Cybersecurity</option>
-                            <option value="digital-transformation">Digital Transformation</option>
-                            <option value="data-analytics">Data Analytics</option>
-                            <option value="it-infrastructure">IT Infrastructure</option>
-                            <option value="it-consulting">IT Consulting</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <span class="error-message"></span>
-                    </div>
+    <!-- Step 2: Project Details -->
+    <div class="form-step" data-step="2">
+        <h3>Project Details</h3>
+        
+        <div class="form-group">
+            <label for="primaryInterest">Primary Interest *</label>
+            <select id="primaryInterest" name="primaryInterest" required>
+                <option value="">Select an option</option>
+                <option value="cloud-solutions">Cloud Solutions</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="digital-transformation">Digital Transformation</option>
+                <option value="data-analytics">Data Analytics</option>
+                <option value="it-infrastructure">IT Infrastructure</option>
+                <option value="it-consulting">IT Consulting</option>
+                <option value="other">Other</option>
+            </select>
+            <span class="error-message"></span>
+        </div>
 
-                    <div class="form-group">
-                        <label>Project Type *</label>
-                        <div class="radio-group">
-                            <label class="radio-label">
-                                <input type="radio" name="projectType" value="new-project" required> New Project/Startup
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="projectType" value="existing-improvement"> Existing System Improvement
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="projectType" value="emergency-support"> Emergency Technical Support
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="projectType" value="consulting"> Consulting & Strategy
-                            </label>
-                        </div>
-                        <span class="error-message"></span>
-                    </div>
+        <div class="form-group">
+            <label>Project Type *</label>
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="projectType" value="new-project" required> New Project/Startup
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="projectType" value="existing-improvement"> Existing System Improvement
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="projectType" value="emergency-support"> Emergency Technical Support
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="projectType" value="consulting"> Consulting & Strategy
+                </label>
+            </div>
+            <span class="error-message"></span>
+        </div>
 
-                    <div class="form-group">
-                        <label for="currentInfrastructure">Current Infrastructure</label>
-                        <textarea id="currentInfrastructure" name="currentInfrastructure" 
-                                placeholder="Briefly describe your current setup (if any)"></textarea>
-                    </div>
+        <div class="form-group">
+            <label for="currentInfrastructure">Current Infrastructure</label>
+            <textarea id="currentInfrastructure" name="currentInfrastructure" 
+                    placeholder="Briefly describe your current setup (if any)"></textarea>
+        </div>
 
-                    <div class="form-group">
-                        <label>Primary Challenges *</label>
-                        <div class="checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="challenges" value="high-costs"> High IT Costs
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="challenges" value="security"> Security Concerns
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="challenges" value="performance"> Performance Issues
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="challenges" value="scaling"> Scaling Problems
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="challenges" value="expertise"> Lack of In-house Expertise
-                            </label>
-                        </div>
-                        <span class="error-message"></span>
-                    </div>
+        <div class="form-group">
+            <label>Primary Challenges *</label>
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="challenges" value="high-costs"> High IT Costs
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="challenges" value="security"> Security Concerns
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="challenges" value="performance"> Performance Issues
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="challenges" value="scaling"> Scaling Problems
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="challenges" value="expertise"> Lack of In-house Expertise
+                </label>
+            </div>
+            <span class="error-message"></span>
+        </div>
 
-                    <div class="form-buttons">
-                        <button type="button" class="btn-prev">← Previous</button>
-                        <button type="button" class="btn-next">Next →</button>
-                    </div>
-                </div>
+        <div class="form-buttons">
+            <button type="button" class="btn-prev">← Previous</button>
+            <button type="button" class="btn-next">Next →</button>
+        </div>
+    </div>
 
-                <!-- Step 3: Logistics -->
-                <div class="form-step" data-step="3">
-                    <h3>Logistics & Preferences</h3>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="timeline">Project Timeline *</label>
-                            <select id="timeline" name="timeline" required>
-                                <option value="">Select timeline</option>
-                                <option value="immediate">Immediate (within 2 weeks)</option>
-                                <option value="short-term">Short-term (1-3 months)</option>
-                                <option value="planning">Planning phase (3-6 months)</option>
-                                <option value="future">Future consideration</option>
-                            </select>
-                            <span class="error-message"></span>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="budget">Budget Range *</label>
-                            <select id="budget" name="budget" required>
-                                <option value="">Select budget</option>
-                                <option value="under-5k">Under $5,000</option>
-                                <option value="5k-15k">$5,000 - $15,000</option>
-                                <option value="15k-30k">$15,000 - $30,000</option>
-                                <option value="30k-50k">$30,000 - $50,000</option>
-                                <option value="50k-plus">$50,000+</option>
-                                <option value="discuss">To be discussed</option>
-                            </select>
-                            <span class="error-message"></span>
-                        </div>
-                    </div>
+    <!-- Step 3: Logistics -->
+    <div class="form-step" data-step="3">
+        <h3>Logistics & Preferences</h3>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="timeline">Project Timeline *</label>
+                <select id="timeline" name="timeline" required>
+                    <option value="">Select timeline</option>
+                    <option value="immediate">Immediate (within 2 weeks)</option>
+                    <option value="short-term">Short-term (1-3 months)</option>
+                    <option value="planning">Planning phase (3-6 months)</option>
+                    <option value="future">Future consideration</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+            
+            
 
-                    <div class="form-group">
-                        <label for="referralSource">How did you hear about us?</label>
-                        <select id="referralSource" name="referralSource">
-                            <option value="">Select an option</option>
-                            <option value="google">Google Search</option>
-                            <option value="linkedin">LinkedIn</option>
-                            <option value="referral">Referral</option>
-                            <option value="previous-client">Previous Client</option>
-                            <option value="event">Industry Event</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
+        <div class="form-group">
+            <label for="referralSource">How did you hear about us?</label>
+            <select id="referralSource" name="referralSource">
+                <option value="">Select an option</option>
+                <option value="google">Google Search</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="referral">Referral</option>
+                <option value="previous-client">Previous Client</option>
+                <option value="event">Industry Event</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
 
-                    <div class="form-group">
-                        <label>Preferred Contact Method *</label>
-                        <div class="radio-group">
-                            <label class="radio-label">
-                                <input type="radio" name="contactMethod" value="email" required> Email
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="contactMethod" value="phone"> Phone Call
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="contactMethod" value="video"> Video Call
-                            </label>
-                        </div>
-                        <span class="error-message"></span>
-                    </div>
+        <div class="form-group">
+            <label>Preferred Contact Method *</label>
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="contactMethod" value="email" required> Email
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="contactMethod" value="phone"> Phone Call
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="contactMethod" value="video"> Video Call
+                </label>
+            </div>
+            <span class="error-message"></span>
+        </div>
 
-                    <div class="form-buttons">
-                        <button type="button" class="btn-prev">← Previous</button>
-                        <button type="button" class="btn-next">Next →</button>
-                    </div>
-                </div>
+        <div class="form-buttons">
+            <button type="button" class="btn-prev">← Previous</button>
+            <button type="button" class="btn-next">Next →</button>
+        </div>
+    </div>
 
-                <!-- Step 4: Review & Submit -->
-                <div class="form-step" data-step="4">
-                    <h3>Review & Submit</h3>
-                    
-                    <div class="review-summary">
-                        <div id="reviewContent"></div>
-                    </div>
+    <!-- Step 4: Review & Submit -->
+    <div class="form-step" data-step="4">
+        <h3>Review & Submit</h3>
+        
+        <div class="review-summary">
+            <div id="reviewContent"></div>
+        </div>
 
-                    <div class="form-group">
-                        <label for="additionalInfo">Anything else we should know?</label>
-                        <textarea id="additionalInfo" name="additionalInfo" 
-                                placeholder="Additional details about your project or specific requirements"></textarea>
-                    </div>
+        <div class="form-group">
+            <label for="additionalInfo">Anything else we should know?</label>
+            <textarea id="additionalInfo" name="additionalInfo" 
+                    placeholder="Additional details about your project or specific requirements"></textarea>
+        </div>
 
-                    <div class="form-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
-                            I agree to the privacy policy and consent to being contacted by InfraMinds *
-                        </label>
-                        <span class="error-message"></span>
-                    </div>
+        <div class="form-group">
+            <label class="checkbox-label">
+                <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
+                I agree to the privacy policy and consent to being contacted by InfraMinds *
+            </label>
+            <span class="error-message"></span>
+        </div>
 
-                    <div class="form-buttons">
-                        <button type="button" class="btn-prev">← Previous</button>
-                        <button type="submit" class="btn-submit">Submit Consultation Request</button>
-                    </div>
-                </div>
-            </form>
+        <div class="form-buttons">
+            <button type="button" class="btn-prev">← Previous</button>
+            <button type="submit" class="btn-submit">Submit Consultation Request</button>
+        </div>
+    </div>
+
+    <!-- Hidden fields for Formspree -->
+    <input type="hidden" name="_subject" value="New Consultation Request - InfraMinds">
+    <input type="hidden" name="_replyto" value="@">
+</form>
 
             <!-- Success Message -->
             <div id="successMessage" class="success-message" style="display: none;">
