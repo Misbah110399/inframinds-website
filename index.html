@@ -1422,7 +1422,7 @@
       }
 
       isValidPhone(phone) {
-        const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+        const digits = (phone || '').replace(/\D/g, '');
         return digits.length >= 10 && digits.length <= 15;
       }
 
