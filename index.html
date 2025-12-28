@@ -1417,13 +1417,13 @@
       }
 
       isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const digits = (phone || '').replace(/\D/g, '');
         return emailRegex.test(email);
       }
 
       isValidPhone(phone) {
         const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
-        return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''));
+        return digits.length >= 10 && digits.length <= 15;
       }
 
       saveStepData(step) {
