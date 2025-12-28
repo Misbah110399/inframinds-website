@@ -1417,8 +1417,8 @@
       }
 
       isValidEmail(email) {
-        const digits = (phone || '').replace(/\D/g, '');
-        return emailRegex.test(email);
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test((email || "").trim());
       }
 
       isValidPhone(phone) {
